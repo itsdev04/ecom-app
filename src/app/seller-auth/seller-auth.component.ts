@@ -26,8 +26,14 @@ export class SellerAuthComponent {
     this.sellerService.userSignUp(data);
   }
 
-  login(data: login): void {
-    this.sellerService.userLogin(data); 
+  login(data: signUp): void {
+    this.authError='';
+    this.sellerService.userLogin(data);
+    this.sellerService.isLoginError.subscribe((isError)=>{
+      if(isError){
+        this.authError="Email or password is not correct";
+      }
+    })
   }
 
   openLogin() {
