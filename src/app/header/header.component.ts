@@ -22,6 +22,11 @@ export class HeaderComponent implements OnInit {
         if(localStorage.getItem('seller') && val.url.includes('seller')){
           console.warn('seller logged in');
           this.menuType = 'seller';
+          if(localStorage.getItem('sellerName')){
+            let sellerStore = localStorage.getItem('sellerName');
+            let sellerData = sellerStore && JSON.parse(sellerStore);
+            this.sellerName = sellerData.name;
+          }
         }else{
           console.warn('user logged in');
           this.menuType = 'default';
