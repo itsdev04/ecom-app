@@ -1,0 +1,33 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-search {
+    display: flex; /* Makes the children flex items */
+    gap: 10px;    /* Adds 10px space between flex items */
+    align-items: center; /* Vertically centers the items */
+}
+
+.nav-search button{
+        height: 35px;
+    color: blueviolet;
+    border: 1px solid blue;
+}
+
+ul{
+        display: inline-flex
+;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
