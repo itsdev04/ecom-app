@@ -43,7 +43,6 @@
       "id": 8
     }
   ],
-  ,
   "products": [
     {
       "name": "Samsung m 40 a ",
@@ -107,6 +106,24 @@
       "description": "Noise smart watch for man and women both",
       "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
       "id": 7
+    },
+    {
+      "id": "b279",
+      "productName": "dwd",
+      "productCategory": "cc",
+      "productDescription": "c",
+      "productColor": "cs",
+      "productPrice": "csc",
+      "productImage": "s"
+    },
+    {
+      "id": "b36c",
+      "name": "iPhone 14",
+      "category": "Mobile",
+      "description": "Apple iPhone 14",
+      "color": "Black",
+      "price": "56,000.00",
+      "image": "https://picsum.photos/200/300?grayscale"
     }
   ]
 }

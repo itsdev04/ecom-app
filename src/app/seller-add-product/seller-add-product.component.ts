@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -9,7 +11,18 @@ import { FormsModule } from '@angular/forms';
 })
 export class SellerAddProductComponent {
 
-  addProductToList(data:any){
-    console.warn(data);
+  addProductMessage:string|undefined;
+  constructor(private productService: ProductService) {}
+  
+  addProductToList(data:product){
+    this.productService.addProduct(data).subscribe((response) => {
+      console.log("Product added successfully", response);
+      if (response) {
+        this.addProductMessage = "Product added successfully";
+      } 
+      setTimeout(() => {
+        this.addProductMessage = undefined;
+      }, 3000);
+    });
   }
 }

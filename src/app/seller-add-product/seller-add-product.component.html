@@ -1,16 +1,16 @@
 <div class = "add-product">
 
 <h1>Add Product</h1>
+<p class="p_message">{{addProductMessage}}</p>
 <form #addProduct="ngForm" class="form" (ngSubmit)="addProductToList(addProduct.value)">
-    <input type="text" class="form-input" placeholder="Product Name" name="productName" ngModel/>
+    <input type="text" class="form-input" placeholder="Product Name" name="name" ngModel/>
 
-    <input type="text" class="form-input" placeholder="Product Category" name="productCategory" ngModel/>
+    <input type="text" class="form-input" placeholder="Product Category" name="category" ngModel/>
 
-    <input type="text" class="form-input" placeholder="Product Description" name="productDescription" ngModel/>
-    <input type="text" class="form-input" placeholder="Product Color" name="productColor" ngModel/>
+    <input type="text" class="form-input" placeholder="Product Description" name="description" ngModel/>
+    <input type="text" class="form-input" placeholder="Product Color" name="color" ngModel/>
 
-    <input type="text" class="form-input" placeholder="Product Price" name="productPrice" ngModel/>
-    <input type="text" class="form-input" placeholder="Product Image URL" name="productImage" ngModel/>
-    <button class="form-button" (click)="addProductToList(addProduct)">Add Product</button>    
-</form>
+    <input type="text" class="form-input" placeholder="Product Price" name="price" ngModel/>
+    <input type="text" class="form-input" placeholder="Product Image URL" name="image" ngModel/>
+    <button class="form-button">Add Product</button></form>
 </div>
