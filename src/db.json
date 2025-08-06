@@ -45,19 +45,10 @@
   ],
   "products": [
     {
-      "name": "I phone 14",
-      "price": "100000",
-      "category": "mobile",
-      "color": "black",
-      "description": "An Apple Product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": "2"
-    },
-    {
       "name": "HP Laptop",
       "price": "50000",
       "category": "Laptop",
-      "color": "black",
+      "color": "White",
       "description": "Hp laptop for student and professionals",
       "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
       "id": "3"

@@ -13,3 +13,8 @@ img {
     width: 100px;
     height: 100px;
 }
+.adjust-update-link{
+    text-decoration: none;
+    color: blueviolet;
+    margin-left: 10px;
+}

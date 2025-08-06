@@ -1,6 +1,6 @@
 <div class="product-list">
     <h1>Product List</h1>
-<p class="p_message">{{productMessage}}</p>
+    <p class="p_message">{{productMessage}}</p>
     <table>
         <thead>
             <tr>
@@ -22,10 +22,11 @@
                 <td>{{product.category}}</td>
                 <td>{{product.description}}</td>
                 <td>{{product.color}}</td>
-                <td><img [src]="product.image" alt="{{product.name}}" width="100"/></td>
+                <td><img [src]="product.image" alt="{{product.name}}" width="100" /></td>
                 <td>
-                    <fa-icon (click)="deleteProduct(product.id)" [icon]="icon"></fa-icon>
-                    </td>
+                    <fa-icon (click)="deleteProduct(product.id)" [icon]="deleteIcon"></fa-icon>
+                    <a class="adjust-update-link" routerLink="/seller-update-product/{{product.id}}"><fa-icon [icon]="editIcon"></fa-icon></a>
+                </td>
             </tr>
     </table>
 </div>

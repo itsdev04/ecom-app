@@ -3,19 +3,21 @@ import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-seller-home',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule, FontAwesomeModule,RouterModule],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })
 export class SellerHomeComponent {
   productList: undefined | product[];
   productMessage: string = '';
-  icon = faTrash;
+  deleteIcon = faTrash;
+  editIcon = faEdit;
 
   constructor(private productService: ProductService) { }
 
