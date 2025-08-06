@@ -24,8 +24,8 @@
                 <td>{{product.color}}</td>
                 <td><img [src]="product.image" alt="{{product.name}}" width="100"/></td>
                 <td>
-                    <button (click)="deleteProduct(product.id)">Delete</button>
-                </td>
+                    <fa-icon (click)="deleteProduct(product.id)" [icon]="icon"></fa-icon>
+                    </td>
             </tr>
     </table>
 </div>
