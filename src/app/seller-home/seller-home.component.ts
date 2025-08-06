@@ -12,13 +12,33 @@ import { CommonModule } from '@angular/common';
 })
 export class SellerHomeComponent {
   productList: undefined | product[];
+  productMessage: string = '';
 
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
+    this.productListReload();
+  }
+
+  deleteProduct(id: number) {
+    console.warn(id);
+    this.productService.deleteProduct(id).subscribe((result) => {
+      if (result) {
+        this.productMessage = 'Product deleted successfully : ' + id;
+        this.productListReload();
+      }
+    })
+    setTimeout(() => {
+      this.productMessage = '';
+    }, 3000);
+  }
+
+  productListReload() {
     this.productService.productList().subscribe((data) => {
       console.log(data);
-      this.productList = data;
+      if (data) {
+        this.productList = data;
+      }
     });
   }
 }
