@@ -127,7 +127,7 @@
       "quantity": 1,
       "productId": 1,
       "userId": 3,
-      "id": 7
+      "id": "7"
     },
     {
       "name": "Levies Jeans",
@@ -139,7 +139,19 @@
       "quantity": 1,
       "productId": 5,
       "userId": 3,
-      "id": 8
+      "id": "8"
+    },
+    {
+      "id": "096a",
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "quantity": 1,
+      "productId": "4",
+      "userId": "3"
     }
   ]
 }
