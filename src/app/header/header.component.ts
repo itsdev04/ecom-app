@@ -16,6 +16,8 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   sellerName:string="";
   searchResult: undefined | product[];
+  userName:string="";
+  cartItems=0;
 
   constructor(private router: Router, private productService: ProductService) {}
 
@@ -37,6 +39,14 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+
+  let cartData= localStorage.getItem('localCart');
+    if(cartData){
+      this.cartItems= JSON.parse(cartData).length
+    }
+    this.productService.cartData.subscribe((items)=>{
+      this.cartItems= items.length
+    })
   }
   userLogout(){
     localStorage.removeItem('user');
